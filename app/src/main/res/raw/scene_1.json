@@ -1,0 +1,233 @@
+{
+	"backgroundMusic":"horror_1",
+	"subSceneList":[
+		{
+			"backgroundResource":"black",
+			"paragraphSceneList":[
+				{
+					"position":2,
+					"playTime":2000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"The Crib Shadow"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"baby_crib",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":11000,
+					"paragraph":{
+						"id":0,
+						"text":"I was babysitting my niece once while I was staying at my brother’s place, and they had the baby camera setup so I could see her on the little TV it came with."
+					}
+				},
+				{
+					"position":3,
+					"playTime":12000,
+					"duration":99999,
+					"paragraph":{
+						"id":1,
+						"text":"I was studying and started dozing off when I heard some whispering and realized it was coming from the monitor."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":14000,
+					"sound":{
+						"id":0,
+						"name":"sound 1",
+						"resource":"girlwhispering"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"baby_crib_2",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":8000,
+					"paragraph":{
+						"id":2,
+						"text":"I initially thought it was some feedback or something, but when I looked at the TV there was a dark shadow near my niece’s crib."
+					}
+				},
+				{
+					"position":3,
+					"playTime":9000,
+					"duration":6000,
+					"paragraph":{
+						"id":3,
+						"text":"I have never been more terrified in my life, but the shadow was clearly there where it had not been before."
+					}
+				},
+				{
+					"position":6,
+					"playTime":14000,
+					"duration":99999,
+					"paragraph":{
+						"id":3,
+						"text":"I ran to my niece’s room and looked around and saw nothing, but I took her the hell out of there. I went back to the TV, and the shadow was clearly gone."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":6000,
+					"sound":{
+						"id":0,
+						"name":"sound 1",
+						"resource":"scarysound"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":16000,
+					"sound":{
+						"id":0,
+						"name":"sound 1",
+						"resource":"runwood"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":16500,
+					"sound":{
+						"id":0,
+						"name":"sound 1",
+						"resource":"babycry"
+					}
+				}
+
+		]
+		},
+		{
+			"backgroundResource":"house_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":12000,
+					"paragraph":{
+						"id":2,
+						"text":"I told my brother what happened and he pulled me aside and told me not to mention it to my sister-in-law because she’ll freak out, but that he had seen that same thing several times now, with the same whispering"
+					}
+				},
+				{
+					"position":3,
+					"playTime":13000,
+					"duration":8000,
+					"paragraph":{
+						"id":3,
+						"text":"They stayed in that house for about four more years and when my niece was just learning to talk she would tell her mom about her ‘special friend.’"
+					}
+				},
+				{
+					"position":6,
+					"playTime":20000,
+					"duration":99999,
+					"paragraph":{
+						"id":3,
+						"text":"To this day, it scares the shit out of me."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":11500,
+					"sound":{
+						"id":0,
+						"name":"Girl Whispering",
+						"resource":"girlwhispering"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":20000,
+					"sound":{
+						"id":0,
+						"name":"Raven",
+						"resource":"raven"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"house_2_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":7000,
+					"paragraph":{
+						"id":2,
+						"text":"When they moved out, my brother told me my niece had become inconsolably sad because she would miss her ‘friend.’"
+					}
+				},
+				{
+					"position":3,
+					"playTime":8000,
+					"duration":6000,
+					"paragraph":{
+						"id":3,
+						"text":"Her mom would tell her she could bring him along but all she would say was that he couldn’t leave the house. "
+					}
+				},
+				{
+					"position":6,
+					"playTime":13000,
+					"duration":99999,
+					"paragraph":{
+						"id":3,
+						"text":"We have never to this day told her about that damn shadow, and she apparently never saw it."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":13000,
+					"sound":{
+						"id":0,
+						"name":"Scary Sound",
+						"resource":"scarysound"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"Raven",
+						"resource":"raven"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"black",
+			"paragraphSceneList":[
+				{
+					"position":2,
+					"playTime":2000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"The End"
+					}
+				}
+			]
+		}
+	]
+}

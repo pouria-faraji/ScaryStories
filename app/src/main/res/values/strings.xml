@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scary Stories</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="rate_app">Rate App</string>
+    <string name="sound_on">Sound On</string>
+    <string name="sound_off">Sound Off</string>
+    <string name="headset_experience"> Best Experience with Headset</string>
+    <string name="tap_continue">Tap to continue</string>
+    <string name="home">Home</string>
+</resources>
