@@ -66,7 +66,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
-                    android:text="Scary Face"/>
+                    android:text="Island"/>
                 <com.blacksite.scarystories.customView.AnotherDangerTextView
                     android:id="@+id/story_4"
                     android:layout_width="wrap_content"

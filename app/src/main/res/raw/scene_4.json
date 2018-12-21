@@ -1,0 +1,284 @@
+{
+	"backgroundMusic":"horror_4",
+	"subSceneList":[
+		{
+			"backgroundResource":"black",
+			"paragraphSceneList":[
+				{
+					"position":2,
+					"playTime":2000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"All I see is Red"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"motel_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I check into small motel a few kilometers from Kiev."
+					}
+				},
+				{
+					"position":2,
+					"playTime":5000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"It is late. I am tired. I tell woman at desk I want a room."
+					}
+				},
+				{
+					"position":3,
+					"playTime":8000,
+					"duration":9000,
+					"paragraph":{
+						"id":0,
+						"text":"She tells me room number and give key. “But one more thing buddy; there is one room without number and always lock. Don’t even peek in there.”"
+					}
+				},
+				{
+					"position":5,
+					"playTime":16000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"I take key and go to room to sleep."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"scary sound",
+						"resource":"scarysound"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"hoteldoors_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"Night comes and I hear trickling of water."
+					}
+				},
+				{
+					"position":2,
+					"playTime":5000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"It comes from the room across."
+					}
+				},
+				{
+					"position":3,
+					"playTime":7000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"I cannot sleep so I open door."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":4000,
+					"sound":{
+						"id":0,
+						"name":"trickling water",
+						"resource":"trickling_water"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":8000,
+					"sound":{
+						"id":0,
+						"name":"door open",
+						"resource":"door_open"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"door_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"The sound is coming from room with no number."
+					}
+				},
+				{
+					"position":2,
+					"playTime":5000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"I pound on door."
+					}
+				},
+				{
+					"position":3,
+					"playTime":7000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"No response."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"scary sound",
+						"resource":"scarysound"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"keyhole_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"I look in keyhole."
+					}
+				},
+				{
+					"position":1,
+					"playTime":4000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"I see nothing except red."
+					}
+				},
+				{
+					"position":2,
+					"playTime":6000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"Water still trickling."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"scary sound",
+						"resource":"scarysound"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"motel2_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I go down to front desk to complain."
+					}
+				},
+				{
+					"position":1,
+					"playTime":5000,
+					"duration":5000,
+					"paragraph":{
+						"id":0,
+						"text":"“By the way who is in that room?” She look at me and begin to tell story."
+					}
+				},
+				{
+					"position":3,
+					"playTime":9000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"There was woman in there."
+					}
+				},
+				{
+					"position":4,
+					"playTime":9000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"Murdered by her husband."
+					}
+				},
+				{
+					"position":5,
+					"playTime":11000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"Skin all white, except her eyes, which were red."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"scary sound",
+						"resource":"scarysound"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"black",
+			"paragraphSceneList":[
+				{
+					"position":2,
+					"playTime":2000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"The End"
+					}
+				}
+			]
+		}
+	]
+}
