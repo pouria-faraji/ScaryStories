@@ -86,7 +86,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
-                    android:text="Princess"/>
+                    android:text="Forest"/>
                 <com.blacksite.scarystories.customView.OctoberCrowTextView
                     android:id="@+id/story_6"
                     android:layout_width="wrap_content"

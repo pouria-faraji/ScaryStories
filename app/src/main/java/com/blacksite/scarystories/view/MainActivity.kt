@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         story_2.setOnClickListener(story_2_clickListener)
         story_3.setOnClickListener(story_3_clickListener)
         story_4.setOnClickListener(story_4_clickListener)
+        story_5.setOnClickListener(story_5_clickListener)
     }
 
 
@@ -106,6 +107,10 @@ class MainActivity : AppCompatActivity() {
     }
     private val story_4_clickListener = View.OnClickListener {
         var sceneManager = SceneManager(this, R.raw.scene_4)
+        sceneManager.play()
+    }
+    private val story_5_clickListener = View.OnClickListener {
+        var sceneManager = SceneManager(this, R.raw.scene_5)
         sceneManager.play()
     }
 }
