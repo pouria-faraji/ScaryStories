@@ -2,7 +2,7 @@ package com.blacksite.scarystories.application
 
 class Settings {
     companion object {
-        const val DATABASE_VERSION = 2
+        const val DATABASE_VERSION = 3
         const val DATABASE_NAME = "ScaryDB"
         val APP_VERSION_NAME = Global.getAppVersionName()
         val APP_WIDTH = Global.getAppWidth()

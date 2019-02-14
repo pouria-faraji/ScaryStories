@@ -10,13 +10,13 @@
 					"duration":99999,
 					"paragraph":{
 						"id":0,
-						"text":"White Dress"
+						"text":"Telephone"
 					}
 				}
 			]
 		},
 		{
-			"backgroundResource":"shower_1000",
+			"backgroundResource":"livingroom_1000",
 			"paragraphSceneList":[
 				{
 					"position":0,
@@ -24,93 +24,136 @@
 					"duration":4000,
 					"paragraph":{
 						"id":0,
-						"text":"This happened when I was 18 and living in an older house."
+						"text":"A few months ago, I was home alone in the living room."
 					}
 				},
 				{
 					"position":2,
 					"playTime":5000,
-					"duration":10000,
+					"duration":4000,
 					"paragraph":{
 						"id":0,
-						"text":"I was getting ready for prom. I'd just finished showering and put on my dress, which was long and white, and took my hair down from the towel to blow dry it."
+						"text":"It was around 10 PM and my phone had just died."
 					}
 				},
 				{
-					"position":5,
-					"playTime":14000,
+					"position":4,
+					"playTime":8000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I don't really like lights, so I'd turned them all off."
+					}
+				},
+				{
+					"position":6,
+					"playTime":11000,
 					"duration":99999,
 					"paragraph":{
 						"id":0,
-						"text":"I flipped my hair over my face to blow dry the back of my head."
+						"text":"When I stood up to grab a snack from the kitchen, I saw a black figure in the kitchen entrance."
 					}
 				}
 			],
 			"soundSceneList":[
 				{
 					"repeat":false,
-					"playTime":8000,
+					"playTime":15000,
 					"sound":{
 						"id":0,
-						"name":"shower",
-						"resource":"shower"
-					}
-				},
-				{
-					"repeat":false,
-					"playTime":12000,
-					"sound":{
-						"id":0,
-						"name":"hairdryer",
-						"resource":"hairdryer"
+						"name":"scary sound",
+						"resource":"scarysound"
 					}
 				}
 			]
 		},
 		{
-			"backgroundResource":"mirror_1000",
+			"backgroundResource":"kitchen_figure_1000",
 			"paragraphSceneList":[
 				{
 					"position":0,
 					"playTime":2000,
-					"duration":5000,
+					"duration":4000,
 					"paragraph":{
 						"id":0,
-						"text":"When I was about to flip it back, for a split second, I saw my reflection in the mirror."
+						"text":"The figure was black and the lights were off, so I couldn't really see."
 					}
 				},
 				{
 					"position":2,
-					"playTime":6000,
-					"duration":6000,
+					"playTime":5000,
+					"duration":5000,
 					"paragraph":{
 						"id":0,
-						"text":"I saw how scary I looked, in this long white dress and long black hair draped over my face."
+						"text":"I thought I was just hallucinating, so I turned on the light, got my snack, and turned it back off."
 					}
 				},
 				{
 					"position":4,
-					"playTime":11000,
+					"playTime":9000,
 					"duration":99999,
 					"paragraph":{
 						"id":0,
-						"text":"As soon as that thought came into my head, the phone rang. I got chills, but brushed it off and went to answer it."
+						"text":"A few seconds later, my phone turns back on, and it starts ringing from an unknown number."
 					}
 				}
 			],
 			"soundSceneList":[
 				{
 					"repeat":false,
-					"playTime":7200,
+					"playTime":12000,
 					"sound":{
 						"id":0,
-						"name":"scarysound",
-						"resource":"scarysound"
+						"name":"mobile ring",
+						"resource":"mobile_ring"
+					}
+				}
+			]
+		},
+		{
+			"backgroundResource":"unknowncaller_1000",
+			"paragraphSceneList":[
+				{
+					"position":0,
+					"playTime":2000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I didn't want to pick up since I don't answer calls from people I don't know."
 					}
 				},
 				{
+					"position":2,
+					"playTime":5000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I texted my friends and asked if they were calling me;"
+					}
+				},
+				{
+					"position":3,
+					"playTime":8000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"they said no."
+					}
+				},
+				{
+					"position":4,
+					"playTime":10000,
+					"duration":99999,
+					"paragraph":{
+						"id":0,
+						"text":"This time, the house phone rang from downstairs."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
 					"repeat":false,
-					"playTime":14000,
+					"playTime":12000,
 					"sound":{
 						"id":0,
 						"name":"phone ring",
@@ -125,19 +168,46 @@
 				{
 					"position":0,
 					"playTime":2000,
-					"duration":8000,
+					"duration":4000,
 					"paragraph":{
 						"id":0,
-						"text":"When I said 'hello', the voice on the other end was distorted but I could still make out the syllables, so it was definitely someone talking, in English, back at me."
+						"text":"So, I went downstairs with my phone's flashlight on."
+					}
+				},
+				{
+					"position":2,
+					"playTime":5000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I picked up the phone and heard laughing."
 					}
 				},
 				{
 					"position":3,
-					"playTime":9000,
+					"playTime":8000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"It stopped, and then I heard breathing."
+					}
+				},
+				{
+					"position":4,
+					"playTime":13000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"I hung up, and I heard my bedroom door upstairs slam."
+					}
+				},
+				{
+					"position":6,
+					"playTime":16000,
 					"duration":99999,
 					"paragraph":{
 						"id":0,
-						"text":"Then they talked in full sentences but I couldn't make it out because it was so distorted."
+						"text":"Terrified, I ran back upstairs and turned on the lights."
 					}
 				}
 			],
@@ -147,57 +217,77 @@
 					"playTime":3000,
 					"sound":{
 						"id":0,
-						"name":"hello",
-						"resource":"hello"
+						"name":"footstep",
+						"resource":"heartbeat_20sec"
 					}
 				},
 				{
 					"repeat":false,
-					"playTime":4000,
+					"playTime":3000,
 					"sound":{
 						"id":0,
-						"name":"distorted",
-						"resource":"distorted"
+						"name":"footstep",
+						"resource":"footstep"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":7000,
+					"sound":{
+						"id":0,
+						"name":"laughing on phone",
+						"resource":"laughingphone"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":10000,
+					"sound":{
+						"id":0,
+						"name":"breath on phone",
+						"resource":"breathphone"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":14000,
+					"sound":{
+						"id":0,
+						"name":"phone hang up",
+						"resource":"phonehangup"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":15500,
+					"sound":{
+						"id":0,
+						"name":"door close",
+						"resource":"doorclose"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":17500,
+					"sound":{
+						"id":0,
+						"name":"run on wood",
+						"resource":"runwood"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":22000,
+					"sound":{
+						"id":0,
+						"name":"light siwtch",
+						"resource":"lightswitch"
 					}
 				}
 			]
 		},
 		{
-			"backgroundResource":"office_1000",
-			"paragraphSceneList":[
-				{
-					"position":0,
-					"playTime":2000,
-					"duration":5000,
-					"paragraph":{
-						"id":0,
-						"text":"I got freaked out and hung up. The call was from a shown number, so I called them back."
-					}
-				},
-				{
-					"position":3,
-					"playTime":6000,
-					"duration":99999,
-					"paragraph":{
-						"id":0,
-						"text":"A lady answered from a law office. I said to her that someone just called me and the voice was distorted so I couldn't hear anything, and what it was regarding."
-					}
-				}
-			],
-			"soundSceneList":[
-				{
-					"repeat":false,
-					"playTime":5000,
-					"sound":{
-						"id":0,
-						"name":"phone dialing",
-						"resource":"phone_dialing"
-					}
-				}
-			]
-		},
-		{
-			"backgroundResource":"whitedress_1000",
+			"backgroundResource":"television_1000",
 			"paragraphSceneList":[
 				{
 					"position":0,
@@ -205,16 +295,90 @@
 					"duration":6000,
 					"paragraph":{
 						"id":0,
-						"text":"The lady said she was the only one in the office and that she or no one else had made any calls for hours."
+						"text":"When I turned on the lights, the TV started playing a scary humming sound, but it wasn't on."
 					}
 				},
 				{
-					"position":3,
+					"position":2,
 					"playTime":7000,
+					"duration":7000,
+					"paragraph":{
+						"id":0,
+						"text":"My mom comes home from work a few minutes later and tells me about a daydream she had, and how I had a demon inside of me."
+					}
+				},
+				{
+					"position":4,
+					"playTime":13000,
+					"duration":4000,
+					"paragraph":{
+						"id":0,
+						"text":"To this day, I sometimes hear footsteps"
+					}
+				},
+				{
+					"position":5,
+					"playTime":18000,
+					"duration":3000,
+					"paragraph":{
+						"id":0,
+						"text":"hear knocks"
+					}
+				},
+				{
+					"position":6,
+					"playTime":22000,
 					"duration":99999,
 					"paragraph":{
 						"id":0,
-						"text":"I still get chills, and haven't worn a white dress since."
+						"text":"or see the man staring at me."
+					}
+				}
+			],
+			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":3000,
+					"sound":{
+						"id":0,
+						"name":"footstep",
+						"resource":"heartbeat_20sec"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":5000,
+					"sound":{
+						"id":0,
+						"name":"humming",
+						"resource":"humming"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":15000,
+					"sound":{
+						"id":0,
+						"name":"walk wood",
+						"resource":"walkwood"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":19000,
+					"sound":{
+						"id":0,
+						"name":"pound_door",
+						"resource":"pound_door"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":23500,
+					"sound":{
+						"id":0,
+						"name":"scary sound",
+						"resource":"scarysound"
 					}
 				}
 			]

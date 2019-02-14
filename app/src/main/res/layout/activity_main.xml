@@ -106,7 +106,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_2}"
                     android:textColor="#ffffff"
-                    android:text="Rocking Horse"/>
+                    android:text="Telephone"/>
                 <com.blacksite.scarystories.customView.StrangerTextView
                     android:id="@+id/story_8"
                     android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
-                    android:text="Photograph"/>
+                    android:text="The Bar"/>
                 <com.blacksite.scarystories.customView.EvaTextView
                     android:id="@+id/story_9"
                     android:layout_width="wrap_content"

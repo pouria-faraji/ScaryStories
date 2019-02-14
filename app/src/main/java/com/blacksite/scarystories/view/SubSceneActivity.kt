@@ -90,6 +90,7 @@ class SubSceneActivity : AppCompatActivity(){
         }
     }
     private fun play(){
+//        heartBeatPlay()
         for(i in currentSubScene.paragraphSceneList){
             createAddParagraphView(i)
         }
@@ -104,6 +105,58 @@ class SubSceneActivity : AppCompatActivity(){
         fadeIn.startDelay = Settings.BACKGROUND_FADE_DELAY
         fadeIn.start()
     }
+//    private fun heartBeatPlay(){
+//        var start = 0L
+//        for(i in 0..19){
+//            var fadeIn = ObjectAnimator.ofFloat(blood, "alpha", 0f, 1f)
+//            var fadeOut = ObjectAnimator.ofFloat(blood, "alpha", 1f, 0f)
+//            var fadeIn2 = ObjectAnimator.ofFloat(blood, "alpha", 0f, 1f)
+//            var fadeOut2 = ObjectAnimator.ofFloat(blood, "alpha", 1f, 0f)
+//            fadeIn.addListener(object : Animator.AnimatorListener{
+//                override fun onAnimationRepeat(animation: Animator?) {
+//                }
+//
+//                override fun onAnimationCancel(animation: Animator?) {
+//                }
+//
+//                override fun onAnimationStart(animation: Animator?) {
+//                }
+//
+//                override fun onAnimationEnd(animation: Animator?) {
+//                    fadeOut.start()
+//
+//                    fadeIn2.start()
+//                }
+//
+//            })
+//
+//            fadeIn2.addListener(object : Animator.AnimatorListener{
+//                override fun onAnimationRepeat(animation: Animator?) {
+//                }
+//
+//                override fun onAnimationEnd(animation: Animator?) {
+//                    fadeOut2.start()
+//                }
+//
+//                override fun onAnimationCancel(animation: Animator?) {
+//                }
+//
+//                override fun onAnimationStart(animation: Animator?) {
+//                }
+//
+//            })
+//
+//            start += 1000L
+//            fadeIn.startDelay = start
+//            fadeIn.duration = 100
+//            fadeOut.duration = 100
+//
+//            fadeIn2.duration = 100
+//            fadeOut2.duration = 100
+//            fadeIn2.startDelay = start + 500
+//            fadeIn.start()
+//        }
+//    }
     private fun createAddParagraphView(paragraphScene: ParagraphScene){
         var textView = MuseoTextView(this)
         textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, this.viewModel.story_text_size_1)
