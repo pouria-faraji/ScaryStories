@@ -126,7 +126,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
-                    android:text="Ghost"/>
+                    android:text="Kitchen"/>
                 <com.blacksite.scarystories.customView.FaceYourFearTextView
                     android:id="@+id/story_10"
                     android:layout_width="wrap_content"
