@@ -48,11 +48,12 @@
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
                     android:text="Crib Shadow"/>
-                <com.blacksite.scarystories.customView.FridayTextView
+                <com.blacksite.scarystories.customView.AnotherDangerTextView
                     android:id="@+id/story_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
+                    android:layout_below="@+id/story_1"
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_1}"
                     android:textColor="#ffffff"
@@ -62,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/story_1"
+                    android:layout_below="@+id/story_2"
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
@@ -102,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_below="@+id/story_5"
+                    android:layout_below="@+id/story_6"
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_2}"
                     android:textColor="#ffffff"
@@ -111,8 +112,8 @@
                     android:id="@+id/story_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/story_7"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/story_5"
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
@@ -122,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/story_8"
+                    android:layout_below="@+id/story_7"
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_3}"
                     android:textColor="#ffffff"
@@ -137,7 +138,7 @@
                     android:textSize="@{mainViewModel.story_text_size_2}"
                     android:textColor="#ffffff"
                     android:text="Slender Man"/>
-                <com.blacksite.scarystories.customView.OctoberCrowTextView
+                <!--<com.blacksite.scarystories.customView.OctoberCrowTextView
                     android:id="@+id/story_11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -166,7 +167,7 @@
                     android:gravity="center"
                     android:textSize="@{mainViewModel.story_text_size_2}"
                     android:textColor="#ffffff"
-                    android:text="Apartment"/>
+                    android:text="Apartment"/>-->
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"

@@ -16,7 +16,7 @@
         android:id="@+id/splash_img"
         android:src="@drawable/splash"
         android:layout_marginBottom="10dp"/>-->
-    <com.blacksite.scarystories.customView.MuseoTextView
+    <com.blacksite.scarystories.customView.FaceYourFearTextView
         android:id="@+id/splash_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

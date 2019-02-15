@@ -25,9 +25,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application){
 
     var soundStatus = MutableLiveData<Boolean>()
 
-    var story_text_size_1:Float = ((Settings.APP_HEIGHT * (0.04)).toFloat())
-    var story_text_size_2:Float = ((Settings.APP_HEIGHT * (0.06)).toFloat())
-    var story_text_size_3:Float = ((Settings.APP_HEIGHT * (0.08)).toFloat())
+    var story_text_size_1:Float = ((Settings.APP_HEIGHT * (0.06)).toFloat())
+    var story_text_size_2:Float = ((Settings.APP_HEIGHT * (0.08)).toFloat())
+    var story_text_size_3:Float = ((Settings.APP_HEIGHT * (0.10)).toFloat())
     var story_text_size_4:Float = ((Settings.APP_HEIGHT * (0.10)).toFloat())
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="splash_title">30dp</dimen>
+    <dimen name="splash_title">60dp</dimen>
     <dimen name="heading_1">30sp</dimen>
     <dimen name="heading_2">20sp</dimen>
     <dimen name="heading_3">13sp</dimen>

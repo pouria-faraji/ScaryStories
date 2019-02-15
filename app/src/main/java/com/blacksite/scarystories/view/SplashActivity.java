@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
 import com.blacksite.scarystories.R;
+import com.blacksite.scarystories.customView.FaceYourFearTextView;
 import com.blacksite.scarystories.customView.MuseoTextView;
 
 public class SplashActivity extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         getSupportActionBar().hide();
 
-        MuseoTextView iv_title = (MuseoTextView) findViewById(R.id.splash_title);
+        FaceYourFearTextView iv_title = (FaceYourFearTextView) findViewById(R.id.splash_title);
         StartAnimations();
     }
 
@@ -44,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
         anim = AnimationUtils.loadAnimation(this, R.anim.text_fade_in);
         anim.reset();
         anim.setStartOffset(1600);
-        MuseoTextView iv_title = (MuseoTextView) findViewById(R.id.splash_title);
+        FaceYourFearTextView iv_title = (FaceYourFearTextView) findViewById(R.id.splash_title);
         iv_title.clearAnimation();
         iv_title.startAnimation(anim);
 

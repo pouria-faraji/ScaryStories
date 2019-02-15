@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         story_7.setOnClickListener(story_7_clickListener)
         story_8.setOnClickListener(story_8_clickListener)
         story_9.setOnClickListener(story_9_clickListener)
+        story_10.setOnClickListener(story_10_clickListener)
     }
 
 
@@ -69,9 +70,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun prepareAnimation(){
         var stories = ArrayList<TextView>(Arrays.asList(story_1, story_2,
-                story_3,story_4,story_5,story_6,story_7,story_8,story_9,story_10,story_11,story_12,story_13))
+                story_3,story_4,story_5,story_6,story_7,story_8,story_9,story_10/*,story_11,story_12,story_13*/))
         var offset = 1000
-        for(i in 0..12){
+        for(i in 0..9){
             var generator = Random()
             var index = generator.nextInt(stories.size)
             var anim = AnimationUtils.loadAnimation(this, R.anim.text_fade_in)
@@ -131,6 +132,10 @@ class MainActivity : AppCompatActivity() {
     }
     private val story_9_clickListener = View.OnClickListener {
         var sceneManager = SceneManager(this, R.raw.scene_9)
+        sceneManager.play()
+    }
+    private val story_10_clickListener = View.OnClickListener {
+        var sceneManager = SceneManager(this, R.raw.scene_10)
         sceneManager.play()
     }
 }
