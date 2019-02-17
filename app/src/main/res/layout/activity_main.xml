@@ -19,20 +19,19 @@
             android:layout_height="match_parent"
             app:parallaxOffsetBase="25dp"
             app:parallaxOffsetIncrement="15dp">
-                <!--<ImageView
-                    android:id="@+id/img1"
-                    android:layout_width="@{mainViewModel.backgroundWidth,default=match_parent}"
-                    android:layout_height="@{mainViewModel.backgroundHeight,default=match_parent}"
-                    android:scaleType="centerCrop"
-                    android:src="@{mainViewModel.backgroundImg1,default=@drawable/girl_1000}"
-                    app:layout_parallaxZIndex="0"/>-->
 
-            <pl.droidsonroids.gif.GifImageView
+            <ImageView
+                android:id="@+id/main_img"
                 android:layout_width="@{mainViewModel.backgroundWidth,default=match_parent}"
                 android:layout_height="@{mainViewModel.backgroundHeight,default=match_parent}"
-                android:src="@drawable/background"
                 android:scaleType="centerCrop"
                 app:layout_parallaxZIndex="0"/>
+            <!--<pl.droidsonroids.gif.GifImageView-->
+                <!--android:layout_width="@{mainViewModel.backgroundWidth,default=match_parent}"-->
+                <!--android:layout_height="@{mainViewModel.backgroundHeight,default=match_parent}"-->
+                <!--android:src="@drawable/background"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--app:layout_parallaxZIndex="0"/>-->
 
             <RelativeLayout
                 android:layout_width="match_parent"

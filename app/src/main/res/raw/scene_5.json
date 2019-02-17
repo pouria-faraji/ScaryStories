@@ -1,5 +1,5 @@
 {
-	"backgroundMusic":"horror_4",
+	"backgroundMusic":"horror_5",
 	"subSceneList":[
 		{
 			"backgroundResource":"black",
@@ -38,6 +38,15 @@
 				}
 			],
 			"soundSceneList":[
+				{
+					"repeat":false,
+					"playTime":2000,
+					"sound":{
+						"id":0,
+						"name":"heartbeat 10 sec",
+						"resource":"heartbeat_10sec"
+					}
+				},
 				{
 					"repeat":false,
 					"playTime":2500,

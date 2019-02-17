@@ -16,7 +16,7 @@ import com.blacksite.scarystories.repository.MusicRepository
 class MainViewModel(application: Application) : AndroidViewModel(application){
     var prefManager = PrefManager(application)
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    var  backgroundImg1:Drawable = application.getDrawable(R.drawable.girl_1000)
+//    var  backgroundImg1:Drawable = application.getDrawable(R.drawable.girl_1000)
 
     var backgroundWidth:Float = ((Settings.APP_WIDTH + Settings.APP_WIDTH/8).toFloat())
     var backgroundHeight:Float = ((Settings.APP_HEIGHT + Settings.APP_HEIGHT/9).toFloat())

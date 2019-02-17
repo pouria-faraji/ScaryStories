@@ -113,6 +113,24 @@
 					"playTime":3000,
 					"sound":{
 						"id":0,
+						"name":"heartbeat 20 sec",
+						"resource":"heartbeat_20sec"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":3000,
+					"sound":{
+						"id":0,
+						"name":"scream",
+						"resource":"scream"
+					}
+				},
+				{
+					"repeat":false,
+					"playTime":3000,
+					"sound":{
+						"id":0,
 						"name":"scream",
 						"resource":"scream"
 					}

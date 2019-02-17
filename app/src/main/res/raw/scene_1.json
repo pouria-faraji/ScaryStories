@@ -83,6 +83,15 @@
 			"soundSceneList":[
 				{
 					"repeat":false,
+					"playTime":3000,
+					"sound":{
+						"id":0,
+						"name":"heartbeat 15 sec",
+						"resource":"heartbeat_15sec"
+					}
+				},
+				{
+					"repeat":false,
 					"playTime":6000,
 					"sound":{
 						"id":0,

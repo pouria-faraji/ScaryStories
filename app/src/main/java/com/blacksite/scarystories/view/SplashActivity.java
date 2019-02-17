@@ -10,11 +10,16 @@ import android.util.Log;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.blacksite.scarystories.R;
 import com.blacksite.scarystories.customView.FaceYourFearTextView;
 import com.blacksite.scarystories.customView.MuseoTextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -32,6 +37,7 @@ public class SplashActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         FaceYourFearTextView iv_title = (FaceYourFearTextView) findViewById(R.id.splash_title);
+        randomBackground();
         StartAnimations();
     }
 
@@ -92,5 +98,20 @@ public class SplashActivity extends AppCompatActivity {
         if (splashThread.isAlive()) {
             splashThread.interrupt();
         }
+    }
+    private void randomBackground(){
+        ArrayList<Integer> backgrounds = new ArrayList<>();
+        backgrounds.add(R.drawable.splash1_1000);
+        backgrounds.add(R.drawable.splash2_1000);
+        backgrounds.add(R.drawable.splash3_1000);
+        backgrounds.add(R.drawable.splash4_1000);
+        backgrounds.add(R.drawable.splash5_1000);
+        backgrounds.add(R.drawable.splash6_1000);
+        backgrounds.add(R.drawable.splash7_1000);
+        backgrounds.add(R.drawable.splash8_1000);
+        Random randomGeneraor = new Random();
+        int index = randomGeneraor.nextInt(backgrounds.size());
+        ImageView splashImg = (ImageView)findViewById(R.id.splash_img);
+        splashImg.setImageResource(backgrounds.get(index));
     }
 }

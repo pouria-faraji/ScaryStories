@@ -15,6 +15,9 @@ class MusicRepository {
         this.insert(Music(1, "darkshadow"))
         this.insert(Music(2, "ayasiikuuki"))
         this.insert(Music(3, "radionoise"))
+        this.insert(Music(4, "darkshadow_loop"))
+        this.insert(Music(5, "deadend_long"))
+        this.insert(Music(6, "episode3"))
     }
     fun getRandomMusic():Music{
         var randomGenerator = Random()

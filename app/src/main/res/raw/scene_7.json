@@ -1,5 +1,5 @@
 {
-	"backgroundMusic":"horror_4",
+	"backgroundMusic":"horror_7",
 	"subSceneList":[
 		{
 			"backgroundResource":"black",
@@ -217,7 +217,7 @@
 					"playTime":3000,
 					"sound":{
 						"id":0,
-						"name":"footstep",
+						"name":"heartbeat 20 sec",
 						"resource":"heartbeat_20sec"
 					}
 				},
@@ -263,7 +263,7 @@
 					"sound":{
 						"id":0,
 						"name":"door close",
-						"resource":"doorclose"
+						"resource":"doorclose2"
 					}
 				},
 				{

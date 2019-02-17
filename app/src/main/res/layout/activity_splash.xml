@@ -5,9 +5,9 @@
     android:background="#000000"
     android:id="@+id/lin_lay">
     <ImageView
+        android:id="@+id/splash_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/cabin_1000"
         android:scaleType="centerCrop"/>
     <!--<ImageView
         android:layout_width="150dp"

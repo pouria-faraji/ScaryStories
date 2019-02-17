@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         lifecycle.addObserver(MainObserver(viewModel))
 
+        randomBackground()
+
         sound_layout.setOnClickListener(soundClickListener)
         story_1.setOnClickListener(story_1_clickListener)
         story_2.setOnClickListener(story_2_clickListener)
@@ -55,6 +57,14 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun randomBackground(){
+        var backgrounds = ArrayList<Int>(Arrays.asList(
+                R.drawable.main2_1000, R.drawable.main3_1000, R.drawable.main4_1000, R.drawable.main5_1000,
+                R.drawable.main6_1000, R.drawable.main7_1000, R.drawable.main8_1000, R.drawable.main9_1000))
+        var randomGenerator = Random()
+        var index = randomGenerator.nextInt(backgrounds.size)
+        main_img.setImageResource(backgrounds[index])
+    }
     fun prepareObservers(){
         this.viewModel.soundStatus.observe(this, Observer {
             if(it!!){

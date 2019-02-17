@@ -1,5 +1,5 @@
 {
-	"backgroundMusic":"horror_4",
+	"backgroundMusic":"horror_10",
 	"subSceneList":[
 		{
 			"backgroundResource":"black",
@@ -150,7 +150,7 @@
                 "sound":{
                   "id":0,
                   "name":"door close",
-                  "resource":"door_close"
+                  "resource":"doorclose2"
                 }
               }
 			]
