@@ -13,6 +13,8 @@ import com.blacksite.scarystories.application.SceneManager
 import com.blacksite.scarystories.viewModel.MainViewModel
 import com.blacksite.scarystories.databinding.ActivityMainBinding
 import com.blacksite.scarystories.observer.MainObserver
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import com.schibsted.spain.parallaxlayerlayout.SensorTranslationUpdater
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -21,6 +23,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
     lateinit var viewModel: MainViewModel
     private lateinit var sensorTranslationUpdater: SensorTranslationUpdater
+
+    lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -54,6 +59,12 @@ class MainActivity : AppCompatActivity() {
         story_8.setOnClickListener(story_8_clickListener)
         story_9.setOnClickListener(story_9_clickListener)
         story_10.setOnClickListener(story_10_clickListener)
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        if(viewModel.prefManager.adStatus) {
+            mAdView.loadAd(adRequest)
+        }
     }
 
 

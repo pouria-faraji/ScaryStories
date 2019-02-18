@@ -30,6 +30,8 @@ import com.blacksite.scarystories.model.Scene
 import com.blacksite.scarystories.model.SubScene
 import com.blacksite.scarystories.multimedia.SoundManager
 import com.blacksite.scarystories.services.SoundService
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
 
 
 class SubSceneActivity : AppCompatActivity(){
@@ -42,6 +44,8 @@ class SubSceneActivity : AppCompatActivity(){
     private lateinit var currentScene:Scene
     private var currentSubSceneIndex:Int = 0
     private var overallTimeSubScene:Int = 0
+
+    private lateinit var mInterstitialAd: InterstitialAd
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,6 +75,15 @@ class SubSceneActivity : AppCompatActivity(){
             this@SubSceneActivity.finish()
             stopService(Intent(this@SubSceneActivity, SoundService::class.java))
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            showAd()
+        }
+
+
+        //Test ad unit ID ca-app-pub-3940256099942544/1033173712
+        mInterstitialAd = InterstitialAd(this)
+        mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/1033173712"
+        if(viewModel.prefManager.adStatus) {
+            mInterstitialAd.loadAd(AdRequest.Builder().build())
         }
     }
     private fun loadData(){
@@ -175,7 +188,7 @@ class SubSceneActivity : AppCompatActivity(){
 
 
         var fadeIn = ObjectAnimator.ofFloat(textView, "alpha", 0f,1f)
-        var fadeOut = ObjectAnimator.ofFloat(textView, "alpha", 1f,0f)
+        var fadeOut = ObjectAnimator.ofFloat(textView, "alpha", 1f,1f)
         fadeIn.addListener(object : Animator.AnimatorListener {
             override fun onAnimationStart(animation: Animator) {
             }
@@ -188,7 +201,7 @@ class SubSceneActivity : AppCompatActivity(){
                     var fadeInHomeLayout = ObjectAnimator.ofFloat(home_layout, "alpha", 0f,1f)
                     fadeInHomeLayout.duration = Settings.PARAGRAPH_FADE_DURATION
                     fadeInHomeLayout.start()
-                    sub_scene_paragraph_layout.setOnClickListener(View.OnClickListener {
+                    sub_scene_paragraph_layout.setOnClickListener {
                         val intent:Intent
                         currentSubSceneIndex++
                         if(currentSubSceneIndex < currentScene.subSceneList.size){
@@ -198,16 +211,16 @@ class SubSceneActivity : AppCompatActivity(){
                             startActivity(intent)
                             this@SubSceneActivity.finish()
                             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                        }
-                        else{
+                        } else{
                             intent = Intent(this@SubSceneActivity, MainActivity::class.java)
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(intent)
                             this@SubSceneActivity.finish()
                             stopService(Intent(this@SubSceneActivity, SoundService::class.java))
                             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+                            showAd()
                         }
-                    })
+                    }
                 }
             }
 
@@ -245,6 +258,7 @@ class SubSceneActivity : AppCompatActivity(){
             this@SubSceneActivity.finish()
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             stopService(Intent(this, SoundService::class.java))
+            showAd()
         }
     }
     override fun onResume() {
@@ -255,5 +269,13 @@ class SubSceneActivity : AppCompatActivity(){
     override fun onPause() {
         super.onPause()
         sensorTranslationUpdater.unregisterSensorManager()
+    }
+
+    fun showAd(){
+        if (mInterstitialAd.isLoaded) {
+            mInterstitialAd.show()
+        } else {
+            Log.d("logger", "The interstitial wasn't loaded yet.")
+        }
     }
 }

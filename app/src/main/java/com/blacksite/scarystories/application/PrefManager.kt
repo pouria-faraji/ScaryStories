@@ -17,6 +17,13 @@ class PrefManager(internal var _context: Context) {
             editor.commit()
         }
 
+    var adStatus: Boolean
+        get() = pref.getBoolean(AD_STATUS, true)
+        set(adStatus){
+            editor.putBoolean(AD_STATUS, adStatus)
+            editor.commit()
+        }
+
     init {
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         editor = pref.edit()
@@ -25,6 +32,7 @@ class PrefManager(internal var _context: Context) {
     companion object {
         // Shared preferences file name
         private const val PREF_NAME = "scary_preference"
-        private const val SOUND_STATUS =  "sound_status"
+        private const val SOUND_STATUS = "sound_status"
+        private const val AD_STATUS = "ad_status"
     }
 }

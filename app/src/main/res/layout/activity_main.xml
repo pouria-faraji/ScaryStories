@@ -171,71 +171,82 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingBottom="20dp"
+                android:paddingBottom="0dp"
                 app:layout_parallaxZIndex="2">
-            <LinearLayout
-                android:layout_width="@{mainViewModel.mainMenuWidth,default=match_parent}"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="30dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:weightSum="1">
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:id="@+id/options"
+                    android:layout_width="@{mainViewModel.mainMenuWidth,default=match_parent}"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="0.33">
-                    <ImageView
-                        android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_block_white_24"/>
-                    <com.blacksite.scarystories.customView.MuseoTextView
-                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_block_white_24"/>
+                        <com.blacksite.scarystories.customView.MuseoTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_3"
+                            android:text="@string/remove_ads"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/heading_3"
-                        android:text="@string/remove_ads"/>
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_grade_white_24"/>
+                        <com.blacksite.scarystories.customView.MuseoTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_3"
+                            android:text="@string/rate_app"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/sound_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+                        <ImageView
+                            android:id="@+id/sound_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_volume_up_white_24"/>
+                        <com.blacksite.scarystories.customView.MuseoTextView
+                            android:id="@+id/sound_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_3"
+                            android:text="@string/sound_on"/>
+                    </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="0.33">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_grade_white_24"/>
-                    <com.blacksite.scarystories.customView.MuseoTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/heading_3"
-                        android:text="@string/rate_app"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/sound_layout"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="0.33">
-                    <ImageView
-                        android:id="@+id/sound_img"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_volume_up_white_24"/>
-                    <com.blacksite.scarystories.customView.MuseoTextView
-                        android:id="@+id/sound_txt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/heading_3"
-                        android:text="@string/sound_on"/>
-                </LinearLayout>
-            </LinearLayout>
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                </com.google.android.gms.ads.AdView>
             </RelativeLayout>
                 <!--<ImageView-->
                     <!--android:id="@+id/img2"-->
