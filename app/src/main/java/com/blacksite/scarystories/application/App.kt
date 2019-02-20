@@ -14,7 +14,7 @@ class App:Application() {
         App.appContext = applicationContext
         var musicRepository = MusicRepository(this)
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
+        MobileAds.initialize(this, "ca-app-pub-5294521785008289~6242780819")
     }
     private fun changeSystemLocaleToEN() {
         val languageToLoad = "en"

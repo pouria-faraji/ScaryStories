@@ -183,6 +183,25 @@
                     android:layout_centerHorizontal="true"
                     android:weightSum="1">
                     <LinearLayout
+                        android:id="@+id/other_apps_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_apps_white_24"/>
+                        <com.blacksite.scarystories.customView.MuseoTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_3"
+                            android:text="@string/other_apps"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/no_ad_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -200,6 +219,7 @@
                             android:text="@string/remove_ads"/>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/rate_app_layout"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -245,7 +265,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                    ads:adUnitId="ca-app-pub-5294521785008289/6091248325">
                 </com.google.android.gms.ads.AdView>
             </RelativeLayout>
                 <!--<ImageView-->

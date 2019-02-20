@@ -16,5 +16,8 @@ class Settings {
         const val PARAGRAPH_FADE_DURATION = 2000L
         const val BACKGROUND_FADE_DELAY = 1000L
         const val BACKGROUND_MUSIC_DELAY = 3000L
+        const val NO_AD_SKU = "no_ad"
+        const val TEST_PURCHASED_SKU = "android.test.purchased"
+
     }
 }

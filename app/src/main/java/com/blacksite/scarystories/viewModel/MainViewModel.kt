@@ -30,9 +30,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application){
     var story_text_size_3:Float = ((Settings.APP_HEIGHT * (0.10)).toFloat())
     var story_text_size_4:Float = ((Settings.APP_HEIGHT * (0.10)).toFloat())
 
+    var adStatus = MutableLiveData<Boolean>()
 
     init {
         soundStatus.value = prefManager.soundStatus
+        adStatus.value = prefManager.adStatus
     }
     var musicRepository = MusicRepository(application)
     var musicManager = MusicManager(application, musicRepository.getRandomMusic(), loop = true)

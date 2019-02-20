@@ -10,18 +10,25 @@ import android.view.animation.AnimationUtils
 import android.widget.TextView
 import com.blacksite.scarystories.R
 import com.blacksite.scarystories.application.SceneManager
+import com.blacksite.scarystories.application.Settings
 import com.blacksite.scarystories.viewModel.MainViewModel
 import com.blacksite.scarystories.databinding.ActivityMainBinding
 import com.blacksite.scarystories.observer.MainObserver
+import com.blacksite.scarystories.viewModel.BillingViewModel
+import com.blacksite.scarystories.viewModel.BillingViewModelFactory
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.schibsted.spain.parallaxlayerlayout.SensorTranslationUpdater
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+import android.content.Intent
+import android.net.Uri
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
     lateinit var viewModel: MainViewModel
+    private lateinit var billingViewModel: BillingViewModel
     private lateinit var sensorTranslationUpdater: SensorTranslationUpdater
 
     lateinit var mAdView : AdView
@@ -38,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         activityMainBinding.setLifecycleOwner(this)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        billingViewModel = ViewModelProviders.of(this, BillingViewModelFactory(application, this, viewModel)).get(BillingViewModel::class.java)
         activityMainBinding.mainViewModel = viewModel
         supportActionBar!!.hide()
 
@@ -59,6 +67,10 @@ class MainActivity : AppCompatActivity() {
         story_8.setOnClickListener(story_8_clickListener)
         story_9.setOnClickListener(story_9_clickListener)
         story_10.setOnClickListener(story_10_clickListener)
+
+        no_ad_layout.setOnClickListener(noAdClickListener)
+        rate_app_layout.setOnClickListener(rateAppClickListener)
+        other_apps_layout.setOnClickListener(otherAppsClickListener)
 
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
@@ -86,6 +98,16 @@ class MainActivity : AppCompatActivity() {
                 sound_img.setImageResource(R.drawable.baseline_volume_off_white_24)
                 sound_txt.setText(R.string.sound_off)
                 this.viewModel.pauseMusic()
+            }
+        })
+
+        this.viewModel.adStatus.observe(this, Observer {
+            if(it!!){
+                no_ad_layout.visibility = View.VISIBLE
+                other_apps_layout.visibility = View.GONE
+            }else{
+                no_ad_layout.visibility = View.GONE
+                other_apps_layout.visibility = View.VISIBLE
             }
         })
     }
@@ -158,5 +180,15 @@ class MainActivity : AppCompatActivity() {
     private val story_10_clickListener = View.OnClickListener {
         var sceneManager = SceneManager(this, R.raw.scene_10)
         sceneManager.play()
+    }
+    private val noAdClickListener = View.OnClickListener {
+        billingViewModel.purchase(this, Settings.NO_AD_SKU)
+    }
+    private val rateAppClickListener = View.OnClickListener {
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$packageName")))
+//        billingViewModel.cancelPurchases()
+    }
+    private val otherAppsClickListener = View.OnClickListener {
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=BlacksiteApps")))
     }
 }

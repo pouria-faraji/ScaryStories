@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Scary Stories</string>
     <string name="remove_ads">Remove Ads</string>
+    <string name="other_apps">Other Apps</string>
     <string name="rate_app">Rate App</string>
     <string name="sound_on">Sound On</string>
     <string name="sound_off">Sound Off</string>
