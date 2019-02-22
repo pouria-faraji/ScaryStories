@@ -30,6 +30,7 @@ class SoundService : Service() {
         super.onDestroy()
         mMediaPlayer!!.stop()
         mMediaPlayer!!.release()
+        mRedrawHandler.removeCallbacksAndMessages(null)
     }
 
     internal inner class RefreshHandler : Handler() {

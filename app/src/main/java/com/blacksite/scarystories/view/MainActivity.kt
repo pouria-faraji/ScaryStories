@@ -23,6 +23,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import android.content.Intent
 import android.net.Uri
+import android.os.Handler
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +34,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sensorTranslationUpdater: SensorTranslationUpdater
 
     lateinit var mAdView : AdView
+
+    internal var doubleBackToExitPressedOnce = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -135,6 +139,18 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         sensorTranslationUpdater.unregisterSensorManager();
+    }
+
+    override fun onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed()
+            return
+        }
+
+        this.doubleBackToExitPressedOnce = true
+        Toast.makeText(this, "Press back again to exit.", Toast.LENGTH_SHORT).show()
+
+        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
     }
 
     private val soundClickListener = View.OnClickListener {
